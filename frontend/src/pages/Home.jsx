@@ -9,7 +9,7 @@ const Home = () => {
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Syne:wght@500;600;700&display=swap"
       />
 
-      <div className="w-full max-w-md">
+      <div className="w-full max-w-xl">
         {/* Eyebrow mark */}
         <div className="flex items-center justify-center gap-3 mb-8">
           <span className="h-px w-8 bg-[#D4A24C]/40" />
@@ -19,7 +19,7 @@ const Home = () => {
         </div>
 
         {/* Panel */}
-        <div className="bg-[#161F38] border border-white/[0.06] rounded-2xl px-8 py-10 sm:px-10 sm:py-12 text-center shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)]">
+        <div className="bg-[#161F38] border border-white/[0.06] min-h-[200px] rounded-2xl  px-16 py-14 sm:px-10 sm:py-12 text-center shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)]">
           <h1
             className="text-4xl sm:text-5xl text-[#F5F1E8] mb-3 italic"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
