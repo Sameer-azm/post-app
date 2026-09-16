@@ -1,15 +1,13 @@
+const dotenv = require('dotenv');
+dotenv.config();
 
-const dotenv=require('dotenv')
-dotenv.config()
+const app = require('./src/app.js');
+const main = require('./config/db.js');
 
-const app=require('./src/app.js')
-const main=require('./config/db.js')
-main()
-const port=3000
+main();
 
-app.get('/',(req,res)=>{
-    res.send('Hello World')
-})
-app.listen(port,()=>{
-    console.log(`Server running on port ${port}`);
-})
+app.get('/', (req, res) => {
+    res.send('Hello World');
+});
+
+module.exports = app;
